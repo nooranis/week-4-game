@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystal Collector!</title>
+</head>
+<body>
+<h1>Crystal Collector!</h1>
+<div id='rules'>
+	<p>You will be given a random number at the start of the game.</p>
+	<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+	<p>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
+	<p>The value of each crystal is hidden from you until you click on it.</p>
+	<p>Each time when the game starts, the game will change the values of each crystal.</p>
+</div>
+<div id='randomNumber'></div>
+<section id='score'>
+	<div id='win'></div>	
+	<div id='loss'></div>
+</section>>
+<div id='scoreTitle'></div>
+<div id='crystals'>
+	<img src="#" alt="">
+	<img src="#" alt="">
+	<img src="#" alt="">
+	<img src="#" alt="">
+</div>
+<div id='totalScore'>
+	<p>Your total score is: </p>
+</div>
+
+<script type="text/javascript">
+
+var win = 0; 
+var loss = 0;
+
+var $('#randomNumber') = Math.floor(Math.random() * 120 - 19 + 1) + 19; 
+	console.log('#randomNumber');
+
+
+
+//on page load: 
+	//title 
+	//directions
+	//random number generated (19 - 120)
+	//score (win/loss: 0)
+	//images of crystals 
+	//total score (title and number) 
+//click on a crystal 
+	//generate random number 
+		//each crystal will generate a random number (1 - 12)
+	//display number of crystal below random generated number 
+		//add number from crystal clicked 
+//if user matches the number 
+	//win +1 
+	//new random number to match is generated 
+	//total score box goes back to 0 
+	//each crystal is assigned a new value for that round 
+	//message in score box: "you win!"
+//if user goes over the random number 
+	//loss + 1 
+	//new random number to match is generated 
+	//total score box goes back to 0 
+	//each crystal is assigned a new value for that round 
+	//message in score box: "you lose!"
+
+</script>
+
+</body>
+</html>
